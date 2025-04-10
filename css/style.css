@@ -183,12 +183,18 @@ body {
 /* team */
 .team-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 21px 94px 21px;
+    background-color: #f5f4fa;
+    
     }
     
     .team-section h2 {
     margin-bottom: 40px;
     font-size: 32px;
+    font-weight: 700;
+	font-size: 36px;
+	text-align: center;
+	margin-bottom: 50px;
     }
     
     .team-container {
@@ -202,12 +208,13 @@ body {
     background: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 5px;
-    width: 250px;
-    overflow: hidden;
+    flex: 1 1 22%;
     }
     
-    .team-member img {width: 100%;
-        height: auto;
+    .team-member img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
         }
         
         .member-info {
@@ -224,25 +231,43 @@ body {
         color: gray;
         font-size: 14px;
         }
-        footer {
+        .footer {
             background: #2f303a;
             color: white;
-            padding: 30px 20px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 10px;
+            padding: 20px;
+            width: 100%;
+            margin: 0;
+            
+
+            
             }
-        nav {
-            display: flex;
-            gap: 20px;
+          
+            .footer-logo {
+                width: 100%;
             }
-                
+            
+            .footer-info a {
+                color: #757575;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+            }
+    
+                .container-portfolio {
+                    padding-top: 94px;
+                    padding-bottom: 94px;
+                    padding-left: 215px;
+                    padding-right: 215px;
+                }
         .buttons {
             display: flex;
             justify-content: center;
             gap: 10px;
-            padding: 20px;
+            padding: 35px;
             }
                 
             .buttons button {
@@ -250,6 +275,7 @@ body {
             border: none;
             background: #eee;
             cursor: pointer;
+            border-radius: 4px;
             }
                 
             .buttons .active {
@@ -260,15 +286,15 @@ body {
             .portfolio-grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 30px;
             gap: 30px;
+            
             }
             .portfolio-item {
             width: 370px;
             background: #fff;
             border: 1px solid #eee;
             padding: 0px;
+            flex: 1 1 30%;
             
              }
              .portfolio-item p {
@@ -281,10 +307,35 @@ body {
 	        font-weight: 700;
 	        
 
-             }
-                
+             } 
             .portfolio-item img {
             width: 100%;
-            height: auto;
+            height: 294px;
+            object-fit: cover;
+
             }
-                
+            
+            .card img {
+                width: 100%;
+                display: block;
+            }
+            .portfolio-info {
+                position: absolute;
+                width: 341px;
+                height: 294px;
+                top: 281px;
+                left: 216px;
+                background: #2196F3E5;
+                color:#FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                opacity: 0;
+                padding: 20px;
+            border-radius: 4px;
+                    }
+                    .card:hover .portfolio-info {
+                        box-shadow: #757575;
+                        opacity: 1;
+                    }
