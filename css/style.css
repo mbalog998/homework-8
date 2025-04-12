@@ -295,7 +295,6 @@ body {
             
              }
              .portfolio-item p {
-            color: #757575;
 	        line-height: 29px;
             padding: 4px 20px 20px 20px;
              }
@@ -339,3 +338,59 @@ body {
                         box-shadow: #757575;
                         opacity: 1;
                     }
+
+.header-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header-nav li {
+    position: relative;
+}
+.arrow-down-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+}
+
+.arrow-down:hover .arrow-down-content {
+    display: block;
+}
+.arrow-down-content li a {
+    display: block;
+    padding: 10px 15px;
+    color:#2196F3;
+    text-decoration: none
+
+}
+.arrow-down li a:hover {
+    background-color: #424990;
+}
+.sub-arrow-down-left {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.sub-arrow-down:hover .sub-arrow-down-left{
+    display: block;
+}
+.sub-arrow-down-left li a {
+    padding: 10px 15px;
+display: block;
+color: #2196f3;
+text-decoration: none;
+
+}
+.sub-arrow-down-left li a:hover{
+    background: #212121;
+}
+
