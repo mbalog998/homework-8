@@ -388,7 +388,7 @@ background: url('../img/background-img.svg') no-repeat center/cover;
                         transform: scale(1.1);
                         }
 
-        .footer-main {
+       .footer-main {
             background: #2f303a;
             padding: 60px 0;
         }
@@ -433,9 +433,8 @@ background: url('../img/background-img.svg') no-repeat center/cover;
                 }
                 
                 .social-footer li a img {
-                width: 40px;
-                height: 40px;
-                background-color: rgba(255, 255, 255, 0.2);
+                width: 44px;
+                height: 44px;
                 border-radius: 50%;
                 padding: 10px;
                 transition: background-color 0.3s;
@@ -444,7 +443,7 @@ background: url('../img/background-img.svg') no-repeat center/cover;
                 .social-footer li a img:hover {
                 background-color: #2196f3;
                 }
-                .social-img li {
+                .social-footer li {
                     margin: 0;
                     padding: 0;
                 }
@@ -455,6 +454,7 @@ background: url('../img/background-img.svg') no-repeat center/cover;
                     padding-left: 215px;
                     padding-right: 215px;
                 }
+            
         .buttons {
             display: flex;
             justify-content: center;
