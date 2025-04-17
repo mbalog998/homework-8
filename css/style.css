@@ -112,7 +112,7 @@ body {
   
 /* HERO */
 
-.hero {
+  .hero {
 	min-height: 600px;
 	background: #2F303A;
 	color: #fff;
@@ -126,7 +126,15 @@ body {
 	max-width: 700px;
 	margin: 0 auto;
 }
-
+.background {
+background: url('../img/background-img.svg') no-repeat center/cover;
+}
+/*.background::before {
+    content:'';
+    position:absolute;
+    inset: 0;
+    background: rgba(47, 48, 58, 0.4);
+}*/
 .hero-title {
 	font-size: 44px;
 	line-height: 60px;
@@ -149,11 +157,77 @@ body {
 	margin-bottom: 10px;
 	font-weight: 700;
 	text-transform: uppercase;
+    width: 270px;
 }
 
 .about-card p {
 	color: #757575;
 	line-height: 29px;
+}
+.icon {
+    width: 300px;
+    padding-top: 150px;
+    position: relative;
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA  url(../img/img-11.svg) no-repeat 50%/70px auto;
+
+}
+.icon-2 {
+    width: 300px;
+    padding-top: 150px;
+    position: relative;
+}
+.icon-2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA  url(../img/img-12.svg) no-repeat 50%/70px auto;
+
+
+}
+.icon-3 {
+    width: 300px;
+    padding-top: 150px;
+    position: relative;
+}
+.icon-3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA  url(../img/img-13.svg) no-repeat 50%/70px auto;
+
+}
+.icon-4 {
+    width: 300px;
+    padding-top: 150px;
+    position: relative;
+}
+.icon-4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 4px;
+    background:#F5F4FA url(../img/img-14.svg) no-repeat 50%/70px auto;
+
 }
 
 .do {
@@ -233,6 +307,87 @@ body {
         color: gray;
         font-size: 14px;
         }
+        .social-img {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            padding: 0;
+            margin-top: 15px;
+            }
+            
+            .social-img li a img {
+            width: 44px;
+            height: 44px;
+            opacity: 0.6;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+            
+            .social-img li a img:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            }
+            .social-img-2 {
+                list-style: none;
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+                padding: 0;
+                margin-top: 15px;
+                }
+                
+                .social-img-2 li a img {
+                width: 44px;
+                height: 44px;
+                opacity: 0.6;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                }
+                
+                .social-img-2 li a img:hover {
+                opacity: 1;
+                transform: scale(1.1);
+                }
+                .social-img-3 {
+                    list-style: none;
+                    display: flex;
+                    gap: 12px;
+                    justify-content: center;
+                    padding: 0;
+                    margin-top: 15px;
+                    }
+                    
+                    .social-img-3 li a img {
+                    width: 44px;
+                    height: 44px;
+                    opacity: 0.6;
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                    }
+                    
+                    .social-img-3 li a img:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                    }
+                    .social-img-4 {
+                        list-style: none;
+                        display: flex;
+                        gap: 12px;
+                        justify-content: center;
+                        padding: 0;
+                        margin-top: 15px;
+                        }
+                        
+                        .social-img-4 li a img {
+                        width: 44px;
+                        height: 44px;
+                        opacity: 0.6;
+                        transition: opacity 0.3s ease, transform 0.3s ease;
+                        }
+                        
+                        .social-img-4 li a img:hover {
+                        opacity: 1;
+                        transform: scale(1.1);
+                        }
+
         .footer-main {
             background: #2f303a;
             padding: 60px 0;
@@ -256,6 +411,43 @@ body {
                 gap: 8px;
                 align-items: flex-start;
             }
+           
+                .footer-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                }
+                
+                .footer a {
+                color: #fff;
+                text-decoration: none;
+                }
+                
+                .social-footer {
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                padding: 0;
+                margin-top: 10px;
+                }
+                
+                .social-footer li a img {
+                width: 40px;
+                height: 40px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                padding: 10px;
+                transition: background-color 0.3s;
+                }
+                
+                .social-footer li a img:hover {
+                background-color: #2196f3;
+                }
+                .social-img li {
+                    margin: 0;
+                    padding: 0;
+                }
     
                 .container-portfolio {
                     padding-top: 94px;
